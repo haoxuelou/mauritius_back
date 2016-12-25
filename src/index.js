@@ -49,10 +49,10 @@ export default class mauritius extends Component {
         (route, routeStack) => {
           let sceneAnimation = getRouteMap().get(route.name).sceneAnimation;
           if (sceneAnimation) {
-            return sceneAnimation;
+            return {...sceneAnimation, gestures:null};
           }
 
-          return Navigator.SceneConfigs.HorizontalSwipeJump;
+          return {...Navigator.SceneConfigs.HorizontalSwipeJump,gestures:null};
         }
       }
       renderScene = {

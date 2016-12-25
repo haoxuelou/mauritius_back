@@ -40,7 +40,6 @@ export default class Plane extends Component {
 
 	getNavigatorBarProps() {
 		return {
-			hideLeftButton: true,
 			title: '出国前准备'
 		};
 	}
@@ -69,13 +68,13 @@ export default class Plane extends Component {
 		return (
 			<View style={[styles.container, this.props.style]}>
 				{this.renderNavigatorBar()}
-				<WebViewPage uri={PlaneUri} />
+				<WebViewPage uri={PlaneUri} ref={(ref) => { this.webview = ref; }}/>
 			</View>
 		);
 	}
 
 	onLeftPressed() {
-		
+		this.webview.goBack();
 	}
 
 	onRightPressed() {

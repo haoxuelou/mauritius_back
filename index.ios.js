@@ -6,9 +6,9 @@
 
 import React from 'react';
 import {
-  AppRegistry
-} from 'react-native';
+    AppRegistry
+    } from 'react-native';
 
 import Mauritius from './src/index';
 
-AppRegistry.registerComponent('mauritius', () => Mauritius);
+AppRegistry.registerComponent('mauritius_back', () => Mauritius);

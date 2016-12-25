@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+		<meta name="format-detection" content="telephone=no" />
+		<title>入境须知</title>	
+		<style>
+			body {
+			    font-family: "Helvetica Neue", Helvetica, Microsoft Yahei, Hiragino Sans GB, WenQuanYi Micro Hei, sans-serif;
+			    font-size: 14px;
+			    line-height: 1.42857143;
+			    color: #4C4947;
+			    background-color: #f7f7f7;
+		        margin: 0;
+			}
+
+			.clearfix:before, .clearfix:after {
+				display: table;
+				content: " ";
+			}
+
+			.clearfix:after {
+				clear: both;
+			}
+
+			:before, :after {
+			    -webkit-box-sizing: border-box;
+			    -moz-box-sizing: border-box;
+			    box-sizing: border-box;
+			}
+
+			.container {
+				margin: 10px;
+			}
+
+			.container p {
+			    margin-top: 5px;
+			    margin-bottom: 5px;
+			}
+
+			.indent>dd:not(.no-indent), .container p {
+				text-indent: 1.5em;
+			}
+
+			.title {
+			    font-weight: bold;
+			}
+
+			.text-left {
+				text-align: left;
+			}
+
+			.text-center {
+				text-align: center;
+			}
+
+			.text-right {
+				text-align: right;
+			}
+
+			.hide {
+				display: none;
+			}
+
+			dl>dl {
+				margin-left: 1.5em;
+			}
+
+			dt {
+			    font-weight: 700;
+			}
+
+			dd {
+				margin-left: 0;
+			}
+
+			dt, dd {
+			    line-height: 1.42857143;
+			}
+
+			dd+dd, dt~dt {
+				margin-top: 1em;
+			}
+
+			dd+dd[data-toggle=false] {
+				margin-top: 0;
+			}
+
+			.detail {
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<dl class="indent">
+				<dt>1、入境签证</dt>
+				<dd>中国公民持有效中国护照、返程机票（机票订单）、住宿证明和经济能力证明在毛里求斯旅游不超过30天，免办签证。<a class="show" href="javascript:void(0);">展开</a></dd>
+				<dl class="indent detail" data-toggle="false">
+					<dd>《中华人民共和国政府和毛里求斯共和国政府关于互免签证的协定》于2013年10月31日生效。根据协定规定，中国公民持有效中国护照、返程机票、住宿证明和经济能力证明，入境、出境或者过境毛里求斯，停留不超过30天，免办签证。详情请参阅中国驻毛里求斯使馆网站：<a href="http://www.ambchine.mu/chn/">http://www.ambchine.mu/chn/</a>。停留超过30天，赴毛工作、定居、学习或从事媒体活动，需在出发前到毛驻华使馆申办相应种类签证。</dd>
+					<dd>具体事宜可咨询毛驻华使馆。毛里求斯驻华使馆地址：北京东直门外大街23号东外外交办公楼202，邮编100600，电话：<a href="tel:+8610-65325695">+8610-65325695</a>，<a href="tel:65325698">65325698</a>（领事部），传真：65325706。电子邮件：mebj@public.bta.net.cn。</dd>
+					<dd>签证注意事项：毛里求斯法律规定，持旅游签证者不得在毛里求斯工作，违反者将被驱逐出境，并列入黑名单、不得再次入境。</dd>
+					<dd>入境人员需填写入境卡。</dd>
+				</dl>
+				<dt>2、海关防疫</dt>
+				<dd>禁止个人携带以下物品入境：枪支弹药，毒品，带有淫秽内容的出版物及音像制品，蔬菜、鲜花和作物，动物，金币、金条，违禁捕鱼用具等。</dd>
+				<dd>以下物品限量携带入境：个人物品价值不得超过7,500卢比；成人旅客所携带的烈酒不得超过1升，葡萄酒和啤酒不得超过2升，烟草不得超过250克。</dd>
+				<dd>违规携带物品或不按规定报关可能受到的处罚：如所带物品超出上述限额，入境请走红色通道申报；不申报者，一经查获，物品将被没收并处罚款。</dd>
+			</dl>
+		</div>
+		<script src="../js/fastclick.js"></script>
+		<script src="../js/slimJS.js"></script>
+		<script>
+			if ('addEventListener' in document) {
+				document.addEventListener('DOMContentLoaded', function() {
+					FastClick.attach(document.body);
+				}, false);
+			}
+
+			var $ = slimJS;
+			$('a.show').on('click', function() {
+				if (typeof window.getComputedStyle == "undefined") return;
+
+				$('.detail').slideDown();
+
+				$(this).remove();
+			});
+
+			$('[data-toggle=false]', '.expand').css({
+				height: 0
+			});
+
+		</script>
+	</body>
+</html>

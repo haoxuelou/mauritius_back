@@ -161,7 +161,7 @@ class NavigationBar extends Component {
       <View>
         <StatusBar
           backgroundColor="#dfecf3"
-          barStyle="light-content"/>
+          barStyle="default" hidden={true}/>
         <View style={[styles.navigationBar, this.navigationBarProps.navigationBar]}>
           {this.renderLeftButton()}
           {this.renderRight()}

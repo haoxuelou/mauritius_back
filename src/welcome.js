@@ -11,6 +11,7 @@ import {
     InteractionManager,
     View,
     Dimensions,
+    StatusBar,
 } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Ionicons';
@@ -94,6 +95,9 @@ export default class Welcome extends Component {
                 <View style={styles.entry}>
                     <Button text="进入" onPress={this._jump} style={{width: 80, backgroundColor: '#2f6cb4'}}/>
                 </View>
+<StatusBar
+backgroundColor="#dfecf3"
+barStyle="default" hidden={true}/>
             </View>
         );
     }
